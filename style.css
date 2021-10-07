@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.absolute {
+  display: none;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  background-image: radial-gradient(
+      274.9% 369.39% at 78.33% -2.33%,
+      rgba(0, 25, 88, 0) 0%,
+      #000000 100%
+    ),
+    radial-gradient(
+      286.98% 431.33% at 100% 0%,
+      rgba(0, 25, 88, 0) 0%,
+      #000000 100%
+    ),
+    url("images/Rectangle.png");
+}
+
+.logo {
+  padding: 70px 0 15px 0;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.heroblock {
+  font-size: 20px;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px; /* 60px looks more than in Figma */
+}
+
+.heroblock-details {
+  padding: 40px 0;
+  font-weight: 600;
+}
+
+.date {
+  padding-bottom: 15px;
+}
+
+.register-btn {
+  border-radius: 100px;
+  color: #001958;
+  background-color: #fff;
+  padding: 13px 60px;
+  font-size: 20px;
+  font-weight: 600;
+  border-width: 0px;
+}
+
+.disclaimer {
+  padding: 10px 0 40px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.main-title {
+  padding: 35px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #001958;
+}
+
+.stats-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.stats-card {
+  padding-bottom: 15px;
+}
+
+.stats-card p {
+  font-size: 20px;
+  color: #4f4f4f;
+  font-weight: 500;
+}
+
+.stats-data {
+  color: #828282;
+  font-weight: bold;
+  font-size: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding-top: 150px;
+    padding-bottom: 90px;
+    padding-left: 8%;
+    background-image: radial-gradient(
+        86.94% 263.61% at 96.08% 15.9%,
+        rgba(0, 25, 88, 0) 0%,
+        #000000 100%
+      ),
+      radial-gradient(
+        86.94% 263.61% at 96.08% 15.9%,
+        rgba(0, 25, 88, 0) 0%,
+        #000000 100%
+      ),
+      url("images/Rectangle.png");
+  }
+
+  .logo {
+    padding: 0px 12px 0 0;
+    flex-basis: 11%;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .heroblock {
+    flex-basis: 35%;
+  }
+  .hero-title {
+    line-height: 50px;
+  }
+
+  .main-title {
+    max-width: 400px;
+    font-size: 40px;
+  }
+
+  .stats-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .stats-card {
+    padding: 10px 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main-title {
+    max-width: unset;
+  }
+  .absolute {
+    position: absolute;
+    display: block;
+    top: 30px;
+    right: 40px;
+    transition: 0.5s;
+  }
+  .absolute:hover {
+    background-color: #ff6c5c;
+  }
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+}
