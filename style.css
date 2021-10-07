@@ -14,14 +14,10 @@
   background-image: radial-gradient(
       274.9% 369.39% at 78.33% -2.33%,
       rgba(0, 25, 88, 0) 0%,
-      #000000 100%
-    ),
-    radial-gradient(
-      286.98% 431.33% at 100% 0%,
-      rgba(0, 25, 88, 0) 0%,
-      #000000 100%
+      #000000 30%
     ),
     url("images/Rectangle.png");
+  background-size: cover;
 }
 
 .logo {
